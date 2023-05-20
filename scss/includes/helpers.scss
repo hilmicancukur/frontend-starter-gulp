@@ -1,0 +1,66 @@
+@mixin only_mq($width: "extra-small") {
+	@if ($width=="extra-small") {
+		@media (max-width: 575px) {
+			@content;
+		}
+	}
+	@else if ($width=="small") {
+		@media (min-width: 576px) and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if ($width=="medium") {
+		@media (min-width: 768px) and (max-width: 992px) {
+			@content;
+		}
+	}
+	@else if ($width=="large") {
+		@media (min-width: 992px) and (max-width: 1200px) {
+			@content;
+		}
+	}
+	@else if ($width=="extra-large") {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+}
+@mixin min_mq($width: "large") {
+	@if ($width=="small") {
+		@media (min-width: 576px) {
+			@content;
+		}
+	}
+	@else if ($width=="medium") {
+		@media (min-width: 768px) {
+			@content;
+		}
+	}
+	@else if ($width=="large") {
+		@media (min-width: 992px) {
+			@content;
+		}
+	}
+	@else if ($width=="extra-large") {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	}
+}
+@mixin max_mq($width: "medium") {
+	@if ($width=="medium") {
+		@media (max-width: 767px) {
+			@content;
+		}
+	}
+	@else if ($width=="large") {
+		@media (max-width: 991px) {
+			@content;
+		}
+	}
+	@else if ($width=="extra-large") {
+		@media (max-width: 1199px) {
+			@content;
+		}
+	}
+}
