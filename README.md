@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Front End Starter with gulp.js
 
 Infrastructure that I prepared beforehand and that I use as a starting point for projects. I'm using newer infrastructures now.
@@ -53,19 +51,3 @@ Install the gulp package in your devDependencies
 Install required packages in your devDependencies.
 
 The latest version of del uses ESM, so you need version 6. In your package.json put "del": "^6.1.1" 
-=======
-# frontend_starter-gulp
-Gulp front end starter
-
-# console command
-npm init
-npm install gulp --save-dev
-npm install sass gulp-sass --save-dev
-npm install browser-sync gulp --save-dev
-npm install gulp-autoprefixer --save-dev
-npm install gulp-connect-php --save-dev
-npm install gulp-plumber --save-dev
-npm install gulp-clean-css --save-dev
-npm install gulp-uglify --save-dev
-npm install del --save-dev
->>>>>>> dec3bc391f80325d9affb0d92299f0a6c2dba252
